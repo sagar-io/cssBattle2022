@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+div{
+  background:#4D4D4D;
+  height:350px;
+  width:95px;
+  transform:rotate(-25deg);
+  border-radius:50px;
+  position: relative;
+  transition: 0.5s;
+}
+div::after{
+    content: '';
+    position: absolute;
+    background:#FF0000;
+    width: 130px;
+    height: 130px;
+    border-radius:50%;
+    transform: translate(-14px);
+    border-bottom: 2px solid white;
+}
+div:hover{
+  transform: rotate(335deg) scale(1.5);
+}
